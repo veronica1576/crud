@@ -867,3 +867,11 @@ in SYSTEMPATH\Validation\Validation.php on line 317.
  6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
  7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-11 21:59:30 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Jugadores.php(47): CodeIgniter\HTTP\Files\UploadedFile->move('../public/uploads/', '1694469570_1c19374cab398e3e2f99')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

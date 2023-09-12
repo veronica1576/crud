@@ -45,6 +45,18 @@ print_r($player);?>
                 </select>
             </div>
 
+            
+            <div class="" form-group>
+                <label for="username">Usuario</label>
+                <input id="username" class="form-control" type="text" value="<?=$player['username']?>" name="username">
+            </div>
+
+            
+            <div class="" form-group>
+                <label for="password">Contraseña</label>
+                <input id="password" class="form-control" type="text" value="<?=$player['password']?>" name="password">
+            </div>
+
             <button type="submit" class="btn btn-success">Guardar</button>
 
         </form>

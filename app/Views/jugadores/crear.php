@@ -12,7 +12,7 @@ FORMULARIO DE REGISTRO
 }?>
 
 <div class="card">
-    <div class="" card-body>
+    <div class=" card-body">
         <h5 class="card-tittle">Ingrese sus datos</h5>
         <p class="card-text">
 
@@ -27,23 +27,33 @@ FORMULARIO DE REGISTRO
                 <input id="date" class="form-control" type="date" name="date">
             </div>
 
-            <div class="" form-group>
+            <div class=" form-group">
                 <label for="email">Email</label>
                 <input id="email" class="form-control" type="email" name="email">
             </div>
 
-            <div class="" form-group>
+            <div class="form-group">
                 <label for="imagen">Avatar</label>
                 <input id="imagen" class="form-control-file" type="file" name="imagen">
             </div>
 
-            <div class="" form-group>
+            <div class="form-group">
                 <label for="nivel">Nivel</label>
                 <select name="nivel" id="nivel" class="form-control">
                     <option value="Bajo">Bajo</option>
                     <option value="Medio">Medio</option>
                     <option value="Alto">Alto</option>
                 </select>
+            </div>
+
+            <div class:"form-group">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+
+            <div class:"form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password">
             </div>
 
             <button type="submit" class="btn btn-success">Guardar</button>

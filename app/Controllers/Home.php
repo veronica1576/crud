@@ -6,6 +6,17 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('jugadores/listar');
+        $datos['pie'] = view('template/piedepagina');
+        $datos['cabecera'] = view('template/cabecera');
+        return view('home',$datos);
     }
+
+    public function login(): string
+
+    {
+        $datos['pie'] = view('template/piedepagina');
+        $datos['cabecera'] = view('template/cabecera');
+        return view('login',$datos);
+    }
+
 }
