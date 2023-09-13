@@ -1,61 +1,15 @@
+<?= $cabecera ?>
 
-<?=$cabecera?>
 <body>
 
     <!-- HEADER: MENU + HEROE SECTION -->
-    
+
 
     <!-- CONTENT -->
 
     <div class="registro">
 
-        <section>
 
-            <!-- Name input -->
-            <form method="post" action="<?= site_url('/registro') ?>" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" value="<?= old('nombrejugador') ?>" class="form-control" type="text" name="nombre">
-                </div>
-
-                <div class="form-group">
-                    <label for="date">Fecha de nacimiento</label>
-                    <input id="date" class="form-control" type="date" name="date">
-                </div>
-
-                <div class=" form-group">
-                    <label for="email">Email</label>
-                    <input id="email" class="form-control" type="email" name="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="imagen">Avatar</label>
-                    <input id="imagen" class="form-control-file" type="file" name="imagen">
-                </div>
-
-                <div class="form-group">
-                    <label for="nivel">Nivel</label>
-                    <select name="nivel" id="nivel" class="form-control">
-                        <option value="Bajo">Bajo</option>
-                        <option value="Medio">Medio</option>
-                        <option value="Alto">Alto</option>
-                    </select>
-                </div>
-
-                <div class:"form-group">
-                    <label for="username">Nombre de usuario</label>
-                    <input type="text" class="form-control" id="username" name="username">
-                </div>
-
-                <div class:"form-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" class="form-control" id="password" name="password">
-                </div>
-
-                <button type="submit" class="btn btn-success">Registrar</button>
-            </form>
-
-            </section>
     </div>
 
     <div class="further">
@@ -116,17 +70,17 @@
 
     <!-- SCRIPTS -->
 
-    <script>
-        function toggleMenu() {
-            var menuItems = document.getElementsByClassName('menu-item');
-            for (var i = 0; i < menuItems.length; i++) {
-                var menuItem = menuItems[i];
-                menuItem.classList.toggle("hidden");
-            }
-        }
+   // <script>
+     //   function toggleMenu() {
+       //     var menuItems = document.getElementsByClassName('menu-item');
+         //   for (var i = 0; i < menuItems.length; i++) {
+           //     var menuItem = menuItems[i];
+             //   menuItem.classList.toggle("hidden");
+            //}
+        //}
     </script>
 
     <!-- -->
 
 </body>
-<?=$pie?>
+<?= $pie ?>

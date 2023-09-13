@@ -1,0 +1,102 @@
+CRITICAL - 2023-09-13 14:24:33 --> include(login.js): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Jugadores.php on line 9.
+ 1 APPPATH\Controllers\Jugadores.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(login.js): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\crudjuego\\app\\Controllers\\Jugadores.php', 9)
+ 2 APPPATH\Controllers\Jugadores.php(9): include()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once('C:\\xampp\\htdocs\\crudjuego\\app\\Controllers\\Jugadores.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\crudjuego\\app\\Controllers\\Jugadores.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Jugadores')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Jugadores')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Jugadores', true)
+ 8 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 15:13:10 --> Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\Jugadores.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\crudjuego\\app\\Controllers\\Jugadores.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Jugadores')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Jugadores')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Jugadores', true)
+ 6 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 15:57:10 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 15:57:12 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:00:31 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:00:34 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:01:01 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:01:21 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:03:23 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:05:55 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:06:12 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 16:11:15 --> Method name must be a string
+in APPPATH\Controllers\Jugadores.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Jugadores->ingresar()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jugadores))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 18:39:06 --> Undefined constant "URL"
+in APPPATH\Views\login.php on line 136.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Home.php(19): view('login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 18:39:07 --> Undefined constant "URL"
+in APPPATH\Views\login.php on line 136.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Home.php(19): view('login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->login()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

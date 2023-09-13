@@ -2,67 +2,56 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
 use App\Models\Jugador;
+use App\Models\Home;
 
-
-include("login.js");
-
-class Jugadores extends Controller
+class Jugadores extends BaseController
 {
-
-    private $modeloJ;
-
-
-    public function __construct(){
-        //instanciar los modelos
-        $this->modeloJ = $this->('Jugador');
-
-    }
-    
     public function ingresar(){
-    $error = false;
-    //validar la sesión
-    // if(isset($_SESSION['SESION INICIADA']) && $_SESSION['SESION INICIADA'] == true){
-    //     header("Location: ".URL."usuarioController/principal");
-    //     exit();
-    // }
-    if(isset($_POST['btnIngresar'])){
-        $datos['jugadores'] = $player->__SET('username', $_POST['loginName']);
-        $datos['jugadores'] = $player->__SET('password', $_POST['loginPassword']);
-        $_POST = [];
-        //llamamos al método de validación del modelo
-        $validar = $this->modeloJ->validarUsuario();
+        
 
-        //revisar la validación
-        if($validar == true){
-            $_SESSION['SESION INICIADA'] = true;
-            $error = false;
-            $_SESSION['nombrejugador'] = $validar['nombre'];
-            $_SESSION['fechanacimiento'] = $validar['fecha'];
-            $_SESSION['emailjugador'] = $validar['email'];
-            $_SESSION['imagenperfil'] = $validar['avatar'];
-            $_SESSION['nivel'] = $validar['nivel'];
 
-            //después de la validación correcta cargar el admin
-            header("Location:'/app/Views/jugadores/listar.php'");
-        }else{
-            $error = true;
+        $parametros= $_POST['parametros'];
+        echo "console.log('$parametros')";
+        exit;
+
+
+
+        if(isset($_POST['parametros'])){
+
+            $player = new Jugador();
+
+            $u= $player->__SET('usuario', $_POST['username']);
+            echo $player->__SET('clave', $_POST['password']);
+            $_POST = [];
+            echo "console.log('$u')";
+
+
+
+            
+            
+            $validar = $this->validarUsuario();
+
+            //revisar la validación
+            if($validar == true){
+                $_SESSION['SESION INICIADA'] = true;
+                $error = false;
+
+                $_SESSION['username'] = $validar['usuario'];
+                $_SESSION['password'] = $validar['clave'];
+
+                header("Location:".base_url()."/listar");
+            }else{
+                
+            }
         }
+
+        require base_url().'/home.php';
     }
-
-    require './app/Views/login.php';
-}
-
-public function cerrarSesion(){
-    if (isset($_SESSION['SESION INICIADA'])) {
-    //  $_SESSION['SESION INICIADA'] = false;
-    session_destroy();
-    }
-
-    header("Location: '/app/Views/home.php'");
-    exit();
-}
+        
+        
+                
+    
 
     
 
