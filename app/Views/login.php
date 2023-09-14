@@ -56,14 +56,15 @@
               </div>
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">Ingresar</button>
-
+              <button type="submit" class="btn btn-primary btn-block mb-4" >Ingresar</button>
               <!-- Register buttons -->
             </form>
           </div>
+          
 
-          <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-            <form action="POST" action="<?=site_url('/registroLogin')?>" id="form_register">
+
+          <div class="tab-pane fade " id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+            <form action="#" id="form_register">
 
               <!-- Name input -->
               <div class="form-outline mb-4">
@@ -123,7 +124,7 @@
               </div>
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-3" onclick="ingresar();">Sign in</button>
+              <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
             </form>
           </div>
         </div>
@@ -133,8 +134,9 @@
   </div>
 </div>
 
-<script src= "<?php echo site_url(); ?>(/js/query/jquery.js)"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="<?php echo site_url(); ?>/js/login.js"></script>
-<?= $pie ?>
+<script src= "<?php base_url('/js/query/jquery.js');?>" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="<?php base_url('/js/query/cdn.jsdelivr.net_npm_popper.js@1.14.3_dist_umd_popper.min.js');?>" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="<?php base_url('/public/js/query/cdn.jsdelivr.net_npm_bootstrap@4.1.3_dist_js_bootstrap.min.js');?>" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="<?php base_url('/js/login.js');?>"></script>
+
+

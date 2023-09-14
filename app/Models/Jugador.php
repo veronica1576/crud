@@ -13,19 +13,19 @@ class Jugador extends Model
     protected $primaryKey = 'idjugadores';
     protected $allowedFields = ['nombrejugador', 'fechanacimiento', 'emailjugador', 'imagenperfil', 'nivel', 'username', 'password'];
 
-    $db = \Config\Database::connect();
     
-   public function validarUsuario()
-    {
-      $sql = "SELECT idjugadores  FROM jugadores WHERE username = ? AND 'password'=?";
+   public function validarUsuario($usuario, $clave)
+   {
 
-        $stm = $this->db->prepare($sql);
-        $stm->bindParam(1, $this->usuario);
-        $stm->bindParam(2, $this->clave);
-        $stm->execute();
-        $player = $stm->fetch(PDO::FETCH_ASSOC);
-       return $player;
-
-    }
+       $db = \Config\Database::connect();
+       $builder = $db->table('jugadores');
+       $query = $builder->select('idjugadores')->getWhere(['username'=>$usuario, 'password'=>$clave]);
+       if($query){
+        echo "console.log('Hecho')";
+       } else{
+        echo "console.log('error')";
+       }
+      
+      }
 
 }

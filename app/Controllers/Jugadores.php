@@ -3,50 +3,27 @@
 namespace App\Controllers;
 
 use App\Models\Jugador;
-use App\Models\Home;
 
 class Jugadores extends BaseController
 {
+
+    public function __construct(){
+        
+    }
+    
     public function ingresar(){
         
-
-
+        $player = new Jugador();
+       // $_POST = [];
         $parametros= $_POST['parametros'];
-        echo "console.log('$parametros')";
+        $usuario= $parametros->post('username');
+        echo "console.log($usuario)";
         exit;
-
-
-
-        if(isset($_POST['parametros'])){
-
-            $player = new Jugador();
-
-            $u= $player->__SET('usuario', $_POST['username']);
-            echo $player->__SET('clave', $_POST['password']);
-            $_POST = [];
-            echo "console.log('$u')";
-
-
-
-            
-            
-            $validar = $this->validarUsuario();
-
-            //revisar la validación
-            if($validar == true){
-                $_SESSION['SESION INICIADA'] = true;
-                $error = false;
-
-                $_SESSION['username'] = $validar['usuario'];
-                $_SESSION['password'] = $validar['clave'];
-
-                header("Location:".base_url()."/listar");
-            }else{
-                
-            }
-        }
-
-        require base_url().'/home.php';
+        $clave= $parametros->post('password');
+        $player->validarUsuario($usuario, $clave);
+        
+      //  echo "console.log('$parametros')";
+      //  exit;
     }
         
         

@@ -5,15 +5,17 @@ $('#form-login').submit((e) => {
 });
 
 function loginFunction(){
-   var pass = $('#loginPassword').val();
+  var pass = $('#loginPassword').val();
   var name = $('#loginName').val();
 
     var parametros =
     {
-
       "username": name,
-      "password": pass,
+      "password": pass, 
     };
+
+    console.log(parametros);
+    exit;
     
     $.ajax({
       data: parametros,
@@ -22,8 +24,11 @@ function loginFunction(){
       dataType:'json',
       success: function()
       {
-        //alert('----');
+        //alert(parametros);
+        
       }
     })
+   
+
   }
 
